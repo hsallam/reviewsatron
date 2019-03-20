@@ -43,25 +43,25 @@ class HeartRatingView: UIView {
     
     private func updateStars() {
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor.red];        
-        let starString = NSMutableAttributedString()
+        let heartString = NSMutableAttributedString()
         
         for i in 0..<maximumValue {
             
             if(value >= Double(i+1)){
                 // Full
-                starString.append(NSAttributedString(string: "\u{2665} ", attributes: attributes))
+                heartString.append(NSAttributedString(string: "\u{2665} ", attributes: attributes))
             }
             else if (value > Double(i)){
                 // Half
-                starString.append(NSAttributedString(string: "\u{E1A0} ", attributes: attributes))
+                heartString.append(NSAttributedString(string: "\u{E1A0} ", attributes: attributes))
             }
             else{
                 // Empty
-                starString.append(NSAttributedString(string: "\u{2661} ", attributes: attributes))
+                heartString.append(NSAttributedString(string: "\u{2661} ", attributes: attributes))
             }
         }
         
-        label.attributedText = starString
+        label.attributedText = heartString
         label.font = UIFont(name: "SSPika", size: 15)
     }
 }
