@@ -27,10 +27,24 @@
 		B135AB3F2241941A00CC4A52 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135AB3E2241941A00CC4A52 /* ReviewCell.swift */; };
 		B135AB412241951100CC4A52 /* BasicReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135AB402241951100CC4A52 /* BasicReviewTableViewCell.swift */; };
 		B135AB432241953400CC4A52 /* BasicReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B135AB422241953400CC4A52 /* BasicReviewTableViewCell.xib */; };
+		B15456E92242F5B5006DA4EE /* MockNetworkLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15456E32242F5B5006DA4EE /* MockNetworkLink.swift */; };
+		B15456EB2242F5B5006DA4EE /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = B15456E52242F5B5006DA4EE /* reviews.json */; };
+		B15456EC2242F5B5006DA4EE /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15456E62242F5B5006DA4EE /* Stubs.swift */; };
+		B15456EE2242F604006DA4EE /* ParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15456ED2242F604006DA4EE /* ParsingTests.swift */; };
 		B1E4AC2022425A6F00B3231B /* HeartRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4AC1F22425A6F00B3231B /* HeartRatingView.swift */; };
 		B1E4AC232242778800B3231B /* ss-pika.otf in Resources */ = {isa = PBXBuildFile; fileRef = B1E4AC222242778800B3231B /* ss-pika.otf */; };
 		B1E4AC2622427EF600B3231B /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4AC2522427EF600B3231B /* UIColor+Additions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B15456DB2242F599006DA4EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B135AAEF2241614800CC4A52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B135AAF62241614800CC4A52;
+			remoteInfo = reviewsatron;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B135AAF72241614800CC4A52 /* reviewsatron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reviewsatron.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +69,12 @@
 		B135AB3E2241941A00CC4A52 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		B135AB402241951100CC4A52 /* BasicReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicReviewTableViewCell.swift; sourceTree = "<group>"; };
 		B135AB422241953400CC4A52 /* BasicReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicReviewTableViewCell.xib; sourceTree = "<group>"; };
+		B15456D62242F599006DA4EE /* reviewsatronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reviewsatronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15456DA2242F599006DA4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15456E32242F5B5006DA4EE /* MockNetworkLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkLink.swift; sourceTree = "<group>"; };
+		B15456E52242F5B5006DA4EE /* reviews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reviews.json; sourceTree = "<group>"; };
+		B15456E62242F5B5006DA4EE /* Stubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		B15456ED2242F604006DA4EE /* ParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingTests.swift; sourceTree = "<group>"; };
 		B1E4AC1F22425A6F00B3231B /* HeartRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRatingView.swift; sourceTree = "<group>"; };
 		B1E4AC222242778800B3231B /* ss-pika.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ss-pika.otf"; sourceTree = "<group>"; };
 		B1E4AC2522427EF600B3231B /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
@@ -68,6 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B15456D32242F599006DA4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				B135AAF92241614800CC4A52 /* reviewsatron */,
+				B15456D72242F599006DA4EE /* reviewsatronTests */,
 				B135AAF82241614800CC4A52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				B135AAF72241614800CC4A52 /* reviewsatron.app */,
+				B15456D62242F599006DA4EE /* reviewsatronTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +227,26 @@
 			path = Reviews;
 			sourceTree = "<group>";
 		};
+		B15456D72242F599006DA4EE /* reviewsatronTests */ = {
+			isa = PBXGroup;
+			children = (
+				B15456E02242F5B5006DA4EE /* Stubs */,
+				B15456ED2242F604006DA4EE /* ParsingTests.swift */,
+				B15456DA2242F599006DA4EE /* Info.plist */,
+			);
+			path = reviewsatronTests;
+			sourceTree = "<group>";
+		};
+		B15456E02242F5B5006DA4EE /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				B15456E52242F5B5006DA4EE /* reviews.json */,
+				B15456E32242F5B5006DA4EE /* MockNetworkLink.swift */,
+				B15456E62242F5B5006DA4EE /* Stubs.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		B1E4AC1E22425A5300B3231B /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +291,24 @@
 			productReference = B135AAF72241614800CC4A52 /* reviewsatron.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B15456D52242F599006DA4EE /* reviewsatronTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15456DD2242F59A006DA4EE /* Build configuration list for PBXNativeTarget "reviewsatronTests" */;
+			buildPhases = (
+				B15456D22242F599006DA4EE /* Sources */,
+				B15456D32242F599006DA4EE /* Frameworks */,
+				B15456D42242F599006DA4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B15456DC2242F599006DA4EE /* PBXTargetDependency */,
+			);
+			name = reviewsatronTests;
+			productName = reviewsatronTests;
+			productReference = B15456D62242F599006DA4EE /* reviewsatronTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,6 +321,10 @@
 				TargetAttributes = {
 					B135AAF62241614800CC4A52 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					B15456D52242F599006DA4EE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B135AAF62241614800CC4A52;
 					};
 				};
 			};
@@ -271,6 +342,7 @@
 			projectRoot = "";
 			targets = (
 				B135AAF62241614800CC4A52 /* reviewsatron */,
+				B15456D52242F599006DA4EE /* reviewsatronTests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +357,14 @@
 				B135AB022241614900CC4A52 /* Assets.xcassets in Resources */,
 				B135AB38224191F100CC4A52 /* ReviewsViewController.xib in Resources */,
 				B135AB432241953400CC4A52 /* BasicReviewTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15456D42242F599006DA4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15456EB2242F5B5006DA4EE /* reviews.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +396,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B15456D22242F599006DA4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15456EE2242F604006DA4EE /* ParsingTests.swift in Sources */,
+				B15456EC2242F5B5006DA4EE /* Stubs.swift in Sources */,
+				B15456E92242F5B5006DA4EE /* MockNetworkLink.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B15456DC2242F599006DA4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B135AAF62241614800CC4A52 /* reviewsatron */;
+			targetProxy = B15456DB2242F599006DA4EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B135AB032241614900CC4A52 /* LaunchScreen.storyboard */ = {
@@ -484,6 +582,46 @@
 			};
 			name = Release;
 		};
+		B15456DE2242F59A006DA4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFU5QKBZFL;
+				INFOPLIST_FILE = reviewsatronTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hobs.reviewsatronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reviewsatron.app/reviewsatron";
+			};
+			name = Debug;
+		};
+		B15456DF2242F59A006DA4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFU5QKBZFL;
+				INFOPLIST_FILE = reviewsatronTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hobs.reviewsatronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reviewsatron.app/reviewsatron";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -501,6 +639,15 @@
 			buildConfigurations = (
 				B135AB0A2241614900CC4A52 /* Debug */,
 				B135AB0B2241614900CC4A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15456DD2242F59A006DA4EE /* Build configuration list for PBXNativeTarget "reviewsatronTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15456DE2242F59A006DA4EE /* Debug */,
+				B15456DF2242F59A006DA4EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
